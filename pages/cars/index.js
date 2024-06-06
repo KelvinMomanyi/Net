@@ -230,8 +230,8 @@ const slider = sliderRef.current
      {/* pagination */}
      <div className={`flex justify-end sm:px-48 px-4 sm:py-3 sm:pt-20 pt-36 items-center gap-3 mt-4 ${selectedCar !== null ? 'hidden' : 'block'}`}>
        <div>
-         <input placeholder="search by brand " className="relative"/>
-         <IoSearchSharp className='absolute top-1/2 left-2'/>
+         <input placeholder="search by brand " className="bg-transparent border-b-2 border-gray-500 focus:outline-none placeholder-gray-500 w-full py-2"/>
+         {/* <IoSearchSharp className='absolute top-1/2 left-2'/> */}
        </div>
        <div className="flex">
          <IoIosArrowBack

@@ -27,16 +27,16 @@ const Search = () => {
           type="text"
           className="w-full p-3 mb-4 border border-gray-300 bg-transparent  focus:outline-none focus:ring-2 focus:ring-blue-500"
           placeholder="Search by Vehicle Name"
-          value={searchQuery}
-          onChange={handleSearchChange}
+          // value={searchQuery}
+          // onChange={handleSearchChange}
         />
-         <ul className='absolute'>
+         {/* <ul className='absolute'>
         {filteredCars.map((car, index) => (
           <li key={index} className="mb-2">
             {car}
           </li>
         ))}
-      </ul>
+      </ul> */}
         <div className='w-full flex justify-start'>
           <p className='text-sm py-2 text-white'>Search by your Budget</p>
         </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const CarCard = ({ make, price, imageUrls, model, transmission, fuelType, year, description }) => {
   return (
-    <div className="sm:w-72 w-[400px] sm:h-72 h-[430px] shadow-lg overflow-hidden bg-white transform transition-transform hover:scale-105">
+    <div className="sm:w-72 w-[300px] sm:h-72 h-[430px] shadow-lg overflow-hidden bg-white transform transition-transform hover:scale-105">
       <div
         className="h-3/5 bg-cover bg-center"
         style={{ backgroundImage: `url(${imageUrls})` }}
