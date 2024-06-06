@@ -1,43 +1,72 @@
 // data
+import { SiAudi, SiMercedes, SiNissan, SiSubaru, SiToyota, SiMazda, SiSuzuki,SiBmw, SiHonda, SiVolvo, SiChevrolet, SiVolkswagen, SiPorsche, SiFord, SiMitsubishi, SiJaguar    } from "react-icons/si";
 const workSlides = {
   slides: [
     {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: <SiAudi/>,
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: <SiMercedes/>,
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: <SiNissan/>,
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
-        },
-      ],
-    },
-    {
-      images: [
-        {
-          title: 'title',
-          path: '/thumb4.jpg',
+          path: <SiBmw/>,
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: <SiSuzuki/>,
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: <SiSubaru/>,
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: <SiToyota/>,
+        },
+        {
+          title: 'title',
+          path: <SiMazda/>,
+        },
+        {
+          title: 'title',
+          path: <SiVolvo/>,
+        },
+        {
+          title: 'title',
+          path: <SiChevrolet/>,
+        },
+        {
+          title: 'title',
+          path: <SiVolkswagen/>,
+        },
+        {
+          title: 'title',
+          path: <SiPorsche/>,
+        },
+        {
+          title: 'title',
+          path: <SiFord/>,
+        },
+        {
+          title: 'title',
+          path: <SiJaguar/>,
+        },
+        {
+          title: 'title',
+          path: <SiHonda/>,
+        },
+        {
+          title: 'title',
+          path: <SiMitsubishi/>,
         },
       ],
     },
@@ -74,12 +103,13 @@ const WorkSlider = () => {
                       <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index}>
                         <div className='flex items-center justify-center relative overflow-hidden group'>
                        {/* image */}
-                        <Image
+                        {/* <Image
                         src={image.path}
                         width={500}
                         height={300}
                         alt=''
-                       />
+                       /> */}
+                       {image.path}
                        {/* overlay-gradient */}
                        <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#c60000b6] to-[#000000] opacity-0 group-hover:opacity-80 group-hover:scale-150 transition-all duration-700'></div>
                          {/* title */}

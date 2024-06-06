@@ -12,25 +12,32 @@ import
    RiFacebookBoxFill,
    RiPinterestLine, 
    RiLinkedinLine,
-   RiBehanceLine 
+   RiBehanceLine,
+   RiWhatsappLine 
  } 
 from "react-icons/ri";
+import { PiLinkedinLogoBold } from "react-icons/pi";
+import { BiLogoFacebookSquare } from "react-icons/bi";
 
 const Socials = () => {
   return(
-    <div className="flex items-center gap-x-5 text-lg">
-      <Link href={''} className="text-black hover:text-accent transition-all duration-300">
+    <div className="flex items-center  gap-x-5 text-lg">
+      <Link href={''} className="text-accent hover:text-accent transition-all duration-300">
+        <RiWhatsappLine/>
+      </Link>
+      <Link href={''} className="text-accent hover:text-accent transition-all duration-300">
         <RiInstagramLine/>
       </Link>
-      <Link href={''} className="text-black hover:text-accent transition-all duration-300">
-        <RiFacebookLine/>
+      <Link href={''} className="text-accent hover:text-accent transition-all duration-300">
+        <BiLogoFacebookSquare/>
       </Link>
-      <Link href={''} className="text-black hover:text-accent transition-all duration-300">
-        <RiLinkedinLine/>
+      <Link href={''} className="text-accent hover:text-accent transition-all duration-300">
+        <PiLinkedinLogoBold/>
       </Link>
-      <Link href={''} className="text-black hover:text-accent transition-all duration-300">
+      <Link href={''} className="text-accent hover:text-accent transition-all duration-300">
         <RiYoutubeLine/>
       </Link>
+    
     
     </div>
   ) 

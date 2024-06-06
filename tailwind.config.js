@@ -29,7 +29,7 @@ module.exports = {
       backgroundImage: {
         explosion: 'url("/bg-explosion.png")',
         photo:'url("/bg-photo.png")',
-        camera:'url("/bg-camera.jpg")',
+        camera:'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/benz.jpg")',
         circles: 'url("/bg-circles.png")',
         circleStar: 'url("/circle-star.svg")',
         site: 'url("/site-bg.svg")',
