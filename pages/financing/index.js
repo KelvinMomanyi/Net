@@ -88,7 +88,7 @@ const Finance = () => {
                   {/* title  */}
                   <div className='flex flex-col align-center items-center'>
                      <div className="font-light mb-2 md:mb-0 text-6xl">{financeData[index].icon}</div>
-                      <div className="font-light mb-2 md:mb-0 text-md">{financeData[index].info}</div>
+                      <div className="font-light mb-2 md:mb-0 text-md text-center">{financeData[index].info}</div>
                   </div>
                   <div className="hidden md:flex"></div>
                   {/* <div>{item.stage}</div> */}
