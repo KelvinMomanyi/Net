@@ -233,7 +233,7 @@ const slider = sliderRef.current
          <input placeholder="search by brand " className="bg-transparent border-b-2 border-gray-500 focus:outline-none placeholder-gray-500 w-full py-2"/>
          {/* <IoSearchSharp className='absolute top-1/2 left-2'/> */}
        </div>
-       <div className="flex">
+       <div className="hidden sm:flex">
          <IoIosArrowBack
             onClick={handlePreviousPage}
             disabled={currentPage === 1}
@@ -277,7 +277,7 @@ const slider = sliderRef.current
      
      {/* small devices */}
     <div className="sm:px-16 px-12 py-4 flex items-center justify-center gap-3 sm:hidden">
-      <button onClick={handlePrevious} className="px-4 py-2 bg-blue-500 text-white rounded">Previous</button>
+      <button onClick={handlePrevious} className="px-4 py-2  text-white rounded">&larr; </button>
       
       {currentCars.slice(currentIndex, currentIndex + 1).map((car, index) => (
         <div
@@ -298,7 +298,7 @@ const slider = sliderRef.current
         </div>
       ))}
       
-      <button onClick={handleNext} className="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
+      <button onClick={handleNext} className="px-4 py-2 text-white rounded">&rarr;</button>
     </div> 
      
       {/* Pagination controls */}
